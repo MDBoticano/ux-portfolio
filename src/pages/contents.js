@@ -18,22 +18,22 @@ const SecondPage = () => (
     <ul>
       React Project Pages
       <li>
-        <a href="https://www.marloboticano.com/frank-ocean-lyrics">
+        <a href="https://mdboticano.github.io/frank-ocean-lyrics">
           Frank Lyrics
         </a>
       </li>
       <li>
-        <a href="https://www.marloboticano.com/markdown-previewer">
+        <a href="https://mdboticano.github.io/markdown-previewer">
           Markdown Previewer
         </a>
       </li>
       <li>
-        <a href="https://www.marloboticano.com/pomodoro">
+        <a href="https://mdboticano.github.io/pomodoro">
           Pomodoro
         </a>
       </li>
       <li>
-        <a href="https://www.marloboticano.com/react-calculator">
+        <a href="https://mdboticano.github.io/react-calculator">
           Calculator
         </a>
       </li>

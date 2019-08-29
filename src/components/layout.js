@@ -5,7 +5,9 @@ import "./layout.css"
 
 const Layout = ({ children }) => {
   return (
-    <main>{children}</main>
+    <div id="main">
+      {children}
+    </div>
   )
 }
 

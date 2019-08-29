@@ -1,9 +1,12 @@
 body {
   margin: 0;
-  padding: 0 1em;
   background-color: #EFEDE8;
   color: rgb(29, 29, 29);
   font-family: "Overpass Mono", monospace;
+}
+
+#main {
+  padding: 0 1em;
 }
 
 .info {
