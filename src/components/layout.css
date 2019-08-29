@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0 1em;
   background-color: #EFEDE8;
   color: rgb(29, 29, 29);
   font-family: "Overpass Mono", monospace;
@@ -39,6 +40,25 @@ body {
 
 #go-home {
   font-size: 1.25rem;
+}
+
+.blog {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.blog .footer {
+  display: flex;
+}
+
+.blog .footer a {
+  font-size: 1.25em;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: 1em;
 }
 
 @media (min-width: 768px) {
