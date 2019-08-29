@@ -12,7 +12,7 @@ const TableOfContents = () => (
     <ul>
       Portfolio Pages
       <li><Link to="/">Homepage</Link></li>
-      <li><Link to="/projects/test-md">Markdown Page 1</Link></li>
+      <li><Link to="/about">About Me</Link></li>
     </ul>
     <p>Interested in my development work? Checkout my&nbsp;
     <a href="https://mdboticano.github.io">

@@ -51,14 +51,28 @@ body {
   grid-template-rows: auto auto;
 }
 
+.blog .blog-post-container {
+  display: flex;
+}
+
+.blog .blog-post-container .blog-post {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: 1em;
+
+  text-align: center;
+}
+
 .blog .footer {
   display: flex;
 }
 
 .blog .footer a {
   font-size: 1.25em;
-  flex: 1;
   display: flex;
+  flex: 1;
   justify-content: center;
   margin-top: auto;
   margin-bottom: 1em;
