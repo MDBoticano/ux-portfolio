@@ -9,10 +9,14 @@ import './src/styles/global.css'
 
 // For prevent components from unmounting 
 import React from 'react'
-import LogoImage from './src/components/logo'
+import Layout from './src/components/layout'
+
+console.log('browser schtuff')
 
 const wrapPageElement = ({ element, props }) => {
-  return <LogoImage {...props}>{element}</LogoImage>
+  console.log('wraping Layout')
+
+  return <Layout {...props}>{element}</Layout>
 }
 
 export default wrapPageElement

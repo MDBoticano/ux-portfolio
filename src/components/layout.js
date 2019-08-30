@@ -1,14 +1,21 @@
-import React from "react"
+import React, { useEffect } from "react"
 import Navigation from './navigation'
+import Footer from './footer'
 
 
 import "./layout.css"
 
 const Layout = ({ children }) => {
+  useEffect(()=> {
+    console.log('mounting')
+  }, [])
+
+
   return (
     <div id="main">
       <Navigation />
       {children}
+      <Footer />
     </div>
   )
 }

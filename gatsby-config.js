@@ -20,6 +20,12 @@ module.exports = {
         path: `${__dirname}/src/markdown-pages`,
       },
     },
+    // { // Emualtes Gatsby V1 behavior with layout in every page
+    //   resolve: `gatsby-plugin-layout`,
+    //   options: {
+    //     component: require.resolve(`./src/components/layout`),
+    //   },
+    // },
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
