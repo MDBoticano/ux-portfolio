@@ -2,3 +2,17 @@
   font-family: "Overpass Mono";
   src: url("../../static/fonts/overpass/overpass-mono-v5-latin-regular.woff")
 }
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../static/fonts/open_sans/open-sans-v17-latin-regular.woff2"),
+       url("../../static/fonts/open_sans/open-sans-v17-latin-regular.woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../static/fonts/open_sans/open-sans-v17-latin-600.woff2"),
+       url("../../static/fonts/open_sans/open-sans-v17-latin-600.woff");
+  font-weight: 600;
+}

@@ -109,17 +109,18 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  padding: 0 $main-side-padding;
 
   .blog-post-container {
-    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    max-width: 1080px;
 
     .blog-post {
-      display: flex;
-      flex: 1;
-      justify-content: center;
-      margin-top: auto;
-      margin-bottom: 1em;
-      text-align: center;
+      .blog-post-content {
+        font-family: "Open Sans", Arial, Helvetica, sans-serif;
+        font-weight: normal;
+      }
     }
   }
 }
