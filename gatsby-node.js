@@ -15,7 +15,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const blogPostTemplate = path.resolve(`src/templates/blogTemplate.js`)
   const mdxTemplate = path.resolve(`src/templates/mdxTemplate.js`)
 
-  /* For .md */
+  /* Query all .md */
   const result = await graphql(`
     {
       allMarkdownRemark(
@@ -48,7 +48,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     })
   })
 
-  /* For .mdx */
+  /* Query all .mdx */
   const mdxQuery = await graphql(`
   {
     allMdx {

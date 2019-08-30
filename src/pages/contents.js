@@ -14,6 +14,7 @@ const TableOfContents = () => (
       <ul>        
         <li><Link to="/">Homepage</Link></li>
         <li><Link to="/about">About Me</Link></li>
+        <li><Link to="/about/me">About / Me</Link></li>
         <li><Link to="/404">404</Link></li>
         <li><Link to="/405">405</Link></li>
       </ul>
