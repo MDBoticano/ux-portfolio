@@ -11,11 +11,7 @@ import './src/styles/global.css'
 import React from 'react'
 import Layout from './src/components/layout'
 
-console.log('browser schtuff')
-
 export const wrapPageElement = ({ element, props }) => {
-  console.log('wraping Layout')
-
   return <Layout {...props}>{element}</Layout>
 }
 // End
