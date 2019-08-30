@@ -13,11 +13,9 @@ import Layout from './src/components/layout'
 
 console.log('browser schtuff')
 
-const wrapPageElement = ({ element, props }) => {
+export const wrapPageElement = ({ element, props }) => {
   console.log('wraping Layout')
 
   return <Layout {...props}>{element}</Layout>
 }
-
-export default wrapPageElement
 // End

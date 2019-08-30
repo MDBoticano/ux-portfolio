@@ -1,11 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
+// import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const TableOfContents = () => (
-  <Layout>
+  <>
     <SEO title="Contents" />
     <div className="table-of-contents">
       <h1>Hi from the "secret" table of contents</h1>
@@ -22,7 +22,7 @@ const TableOfContents = () => (
     </a>
         &nbsp;instead</p>
     </div>
-  </Layout>
+  </>
 )
 
 export default TableOfContents

@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Layout from '../components/layout'
+// import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 export default function Template({
@@ -10,7 +10,7 @@ export default function Template({
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
   return (
-    <Layout>
+    <>
       <SEO title={frontmatter.title} />
       <div className="blog">
         <div className="blog-post-container">
@@ -22,7 +22,7 @@ export default function Template({
           </div>
         </div>
       </div>
-    </Layout>
+    </>
   )
 }
 
