@@ -12,8 +12,13 @@ import Img from "gatsby-image"
  * - `gatsby-image`: https://gatsby.dev/gatsby-image
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
+const logoContainerMaxWidth = '3.5em';
 
-const Image = () => {
+const logoContainerStyle = {
+  maxWidth: logoContainerMaxWidth
+}
+
+const LogoImage = () => {
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "shoe-icon.png" }) {
@@ -26,7 +31,12 @@ const Image = () => {
     }
   `)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return (
+    <div className="logo-container" style={logoContainerStyle}>
+      <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+    </div>
+  )
+
 }
 
-export default Image
+export default LogoImage

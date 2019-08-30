@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 
 const TableOfContents = () => (
   <Layout>
-    <SEO title="Page two" />
+    <SEO title="Contents" />
     <h1>Hi from the "secret" table of contents</h1>
     <p>Welcome!</p>
     <ul>

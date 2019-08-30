@@ -20,7 +20,6 @@ export default function Template({
             />
           </div>
         </div>
-        <Footer />
       </div>
     </Layout>
   )
