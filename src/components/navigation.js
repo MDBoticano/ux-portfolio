@@ -4,10 +4,8 @@ import LogoImage from './logo'
 
 const Navigation = () => {
   return (
-    <div className="navigation">
-      <div className="my-logo">
-        <LogoImage />
-      </div>
+    <nav className="navigation" aria-label="navigation">
+      <LogoImage />
       <div className="links">
         <Link to="/">Work</Link>
         <Link to="/about">About</Link>
@@ -17,7 +15,7 @@ const Navigation = () => {
           Resume
         </a>
       </div>
-    </div>
+    </nav>
   )
 }
 

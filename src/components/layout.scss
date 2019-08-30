@@ -20,13 +20,18 @@ body {
 .navigation {
   padding: $main-vertical-padding $main-side-padding 0;
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   align-items: center;
+  justify-content: space-between;
   
-  .my-logo {
+  .logo-container {
     flex: 1;
   }
-  .links a {
-    margin: 0 0 0 1.5em;
+  .links {
+    a {
+      margin: 0 0 0 1.5em;
+    }
   }
 }
 

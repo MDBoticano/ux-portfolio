@@ -24,7 +24,7 @@ const LogoImage = () => {
       placeholderImage: file(relativePath: { eq: "shoe-icon.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_tracedSVG
           }
         }
       }
@@ -36,7 +36,6 @@ const LogoImage = () => {
       <Img fluid={data.placeholderImage.childImageSharp.fluid} />
     </div>
   )
-
 }
 
 export default LogoImage
