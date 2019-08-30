@@ -3,7 +3,7 @@ import Navigation from './navigation'
 import Footer from './footer'
 
 
-import "./layout.css"
+import "./layout.scss"
 
 const Layout = ({ children }) => {
   useEffect(()=> {

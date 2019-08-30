@@ -7,18 +7,21 @@ import SEO from "../components/seo"
 const TableOfContents = () => (
   <Layout>
     <SEO title="Contents" />
-    <h1>Hi from the "secret" table of contents</h1>
-    <p>Welcome!</p>
-    <ul>
-      Portfolio Pages
-      <li><Link to="/">Homepage</Link></li>
-      <li><Link to="/about">About Me</Link></li>
-    </ul>
-    <p>Interested in my development work? Checkout my&nbsp;
+    <div className="table-of-contents">
+      <h1>Hi from the "secret" table of contents</h1>
+      <p>Welcome!</p>
+      <p>Portfolio Pages</p>
+      <ul>        
+        <li><Link to="/">Homepage</Link></li>
+        <li><Link to="/about">About Me</Link></li>
+        <li><Link to="/404">404</Link></li>
+      </ul>
+      <p>Interested in my development work? Checkout my&nbsp;
     <a href="https://mdboticano.github.io">
-      dev portfolio
+          dev portfolio
     </a>
-    &nbsp;instead</p>
+        &nbsp;instead</p>
+    </div>
   </Layout>
 )
 

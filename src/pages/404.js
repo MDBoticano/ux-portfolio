@@ -5,10 +5,10 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const NotFoundPage = () => (
+const PageNotFound = () => (
   <Layout>
     <SEO title="404: Not found" />
-    <div className="info">
+    <div className="info four-oh-four">
       <p id="big-404">404</p>
       <h1 id="description-404">PAGE NOT FOUND</h1>
       <Link to="/" id="go-home">Return to Homepage</Link>
@@ -16,4 +16,4 @@ const NotFoundPage = () => (
   </Layout>
 )
 
-export default NotFoundPage
+export default PageNotFound
