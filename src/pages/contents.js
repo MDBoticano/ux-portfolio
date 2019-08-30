@@ -10,7 +10,7 @@ const TableOfContents = () => (
     <div className="table-of-contents">
       <h1>Hi from the "secret" table of contents</h1>
       <p>Welcome!</p>
-      <p>Portfolio Pages</p>
+      <p>Nav Pages</p>
       <ul>        
         <li><Link to="/">Homepage</Link></li>
         <li><Link to="/about">About Me</Link></li>
@@ -18,9 +18,16 @@ const TableOfContents = () => (
         <li><Link to="/404">404</Link></li>
         <li><Link to="/405">405</Link></li>
       </ul>
+
+      <p>Project Pages</p>
+      <ul>        
+        <li><Link to="/projects/feed-the-kids">Feed the Kids</Link></li>
+      </ul>
+
+
       <p>Interested in my development work? Checkout my&nbsp;
         <a href="https://mdboticano.github.io">
-              dev portfolio
+          dev portfolio
         </a>
         &nbsp;instead
       </p>

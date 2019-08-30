@@ -20,5 +20,4 @@ problems in order to bring forth the right solution.
 Want to chat? You can reach me at
 m.boticano@gmail.com
 
-You can also find me on 
-[LinkedIn](https://www.linkedin.com/in/marlo-daniel-boticano)
+You can also find me on [Linked](https://www.linkedin.com/in/marlo-daniel-boticano)

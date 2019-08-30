@@ -3,17 +3,26 @@ path: "/projects/feed-the-kids"
 date: "2019-08-29"
 title: "About Me"
 ---
+import MdxInlineLink from "../components/mdx-link-inline"
+
+
 # Feed the Kids
 
 ## Registration Transformation through Digitization
 
 ### Summary
 
-The San Diego based organization It's All About the Kids
-seeks to improve the lives of families in undeveloped neighborhoods. Their
-Feed the Kids program provides weekly meal packages for the families of
-students that qualify for free lunch. My team was tasked specifically
-with improving the program's registration process.
+<MdxInlineLink 
+  pTextBefore="The San Diego based organization "
+  pTextAfter="
+    seeks to improve the lives of families in underdeveloped neighborhoods. 
+    Their Feed the Kids program provides weekly meal packages for the families 
+    of students that qualify for free lunch. My team was tasked specifically
+    with improving the program's registration process."
+  aText="It's All About the Kids"
+  link="https://www.itsallaboutthekids.org/"
+  inNewTab={true}
+/>
 
 ### Process
 #### Background
@@ -80,6 +89,8 @@ before, but we never investigated why she stopped using it. A team in our
 program had convinced her to use the Google Suite (Sheets) for a different
 problem, so we investigated how we could use Google Forms for ours.
 
+<br />
+
 The Google Forms app...
 - allows field validation to prevent incorrect entries
 - automatically uploads and converts data into Sheets
@@ -117,7 +128,9 @@ them. Just as our solution takes iterations to improve, the next
 generation of kids can become the next iteration of progress for the
 betterment of the world.
 
-
-If you would like to know more, you can read our 
-[design report](https://docs.google.com/document/d/1_nxxMe7LFWhmZWHQ_tmVB7uVhAREKRUb8F5IZy8tOlg/edit?usp=sharing)
-
+<MdxInlineLink 
+  pTextBefore="If you would like to know more, you can read our&nbsp;"
+  aText="Design Report" 
+  link="https://docs.google.com/document/d/1_nxxMe7LFWhmZWHQ_tmVB7uVhAREKRUb8F5IZy8tOlg/edit?usp=sharing"
+  inNewTab={true}
+/>
