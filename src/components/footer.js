@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 const Footer = () => {
   return (
     <div className="footer">
-      <Link to="/contents">Contents</Link>
+      <Link to="/contents" className="link-to-contents">Contents</Link>
     </div>
   )
 }

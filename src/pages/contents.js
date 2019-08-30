@@ -17,10 +17,11 @@ const TableOfContents = () => (
         <li><Link to="/404">404</Link></li>
       </ul>
       <p>Interested in my development work? Checkout my&nbsp;
-    <a href="https://mdboticano.github.io">
-          dev portfolio
-    </a>
-        &nbsp;instead</p>
+        <a href="https://mdboticano.github.io">
+              dev portfolio
+        </a>
+        &nbsp;instead
+      </p>
     </div>
   </>
 )
