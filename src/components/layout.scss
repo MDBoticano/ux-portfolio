@@ -1,6 +1,7 @@
 /* Variables */
 $main-side-padding: 4rem;
 $main-vertical-padding: 2.5rem;
+$blog-vertical-padding: 1.25rem;
 
 body {
   margin: 0;
@@ -109,7 +110,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  padding: 0 $main-side-padding;
+  padding: $blog-vertical-padding $main-side-padding;
 
   .blog-post-container {
     margin: 0 auto;
@@ -137,13 +138,25 @@ body {
           margin: 1.75rem 0 0;
           text-align: center;
         }
+
         h4 {
           font-size: 1.25rem;
           margin: 1.5rem 0 0;
         }
+
         p {
           margin: 1em 0 0;
           line-height: 1.5rem;
+        }
+
+        blockquote {
+          margin: 0;
+          padding: 1.5rem;
+          
+          p {
+            margin: 0;
+            font-size: 1.5rem;
+          }
         }
 
         a .mdx-link {
