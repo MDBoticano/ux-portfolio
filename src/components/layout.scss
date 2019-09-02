@@ -151,7 +151,9 @@ body {
 
         blockquote {
           margin: 0;
-          padding: 1.5rem;
+          padding: 1.5rem 3.5rem;
+          display: flex;
+          justify-content: center;
           
           p {
             margin: 0;
