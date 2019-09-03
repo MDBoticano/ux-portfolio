@@ -169,6 +169,10 @@ body {
   }
 }
 
+span {
+  display: none;
+}
+
 @media (max-width: 1079px) {
   html { font-size: 16px; }
 }

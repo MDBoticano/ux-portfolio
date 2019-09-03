@@ -30,6 +30,12 @@ module.exports = {
     },
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [ `gatsby-remark-images` ],
+      }
+    },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-mdx`,
