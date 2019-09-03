@@ -117,64 +117,75 @@ body {
   flex-grow: 1;
   padding: $blog-vertical-padding $main-side-padding;
 
-  .blog-post-container {
+  .blog-content-container {
     margin: 0 auto;
     justify-content: space-around;
     max-width: $max-body-width;
 
-    .blog-post {
-      .blog-post-content {
-        font-family: "Open Sans", Arial, Helvetica, sans-serif;
-        font-weight: normal;
+    .blog-content {
+      font-family: "Open Sans", Arial, Helvetica, sans-serif;
+      font-weight: normal;
+      
+      h1 { 
+        margin: 1rem 0 0;
+        text-align: center;
+      }
 
-        h1 { 
-          margin: 1rem 0 0;
-          text-align: center;
-        }
+      h2 { 
+        font-size: 1.25rem;
+        margin: 1rem 0 0;
+        text-align: center;
+      }
 
-        h2 { 
-          font-size: 1.25rem;
-          margin: 1rem 0 0;
-          text-align: center;
-        }
+      h3 {
+        font-size: 1.5rem;
+        margin: 2rem 0 0;
+        text-align: center;
+      }
 
-        h3 {
-          font-size: 1.5rem;
-          margin: 1.75rem 0 0;
-          text-align: center;
-        }
+      h4 {
+        font-size: 1.25rem;
+        margin: 1.5rem 0 0;
+      }
 
-        h4 {
-          font-size: 1.25rem;
-          margin: 1.5rem 0 0;
-        }
+      p {
+        margin: 1em 0 0;
+        line-height: 1.5rem;
+      }
 
+      h6 {
+        margin: .75em auto 1em auto;
+        text-align: center;
+        font-size: 0.75em;
+      }
+
+      blockquote {
+        margin: 0;
+        padding: 1.5rem 3.5rem;
+        display: flex;
+        justify-content: center;
+        
         p {
-          margin: 1em 0 0;
-          line-height: 1.5rem;
-        }
-
-        h6 {
-          margin: .75em auto 1em auto;
-          text-align: center;
-          font-size: 0.75em;
-        }
-
-        blockquote {
           margin: 0;
-          padding: 1.5rem 3.5rem;
-          display: flex;
-          justify-content: center;
-          
-          p {
-            margin: 0;
-            font-size: 1.5rem;
-          }
+          font-size: 1.5rem;
         }
+      }
 
-        a .mdx-link {
-          width: 100%;
-        }
+      a .mdx-link {
+        width: 100%;
+      }
+
+      /* Adjacent Sibling selectors */
+      h3 + p {
+        margin: .5rem 0 0 0;
+      }
+
+      h3 + h4 {
+        margin: 0.75rem 0 0;
+      }
+
+      h4 + p {
+        margin: .25rem 0 0 0;
       }
     }
   }

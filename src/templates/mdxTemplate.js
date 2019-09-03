@@ -9,11 +9,9 @@ export default function MdxTemplate({ data: { mdx } }) {
     <>
       <SEO title={mdx.frontmatter.title} />
       <div className="blog">
-        <div className="blog-post-container">
-          <div className="blog-post">
-            <div className="blog-post-content">
-              <MDXRenderer>{mdx.body}</MDXRenderer>
-            </div>
+        <div className="blog-content-container">
+          <div className="blog-content">
+            <MDXRenderer>{mdx.body}</MDXRenderer>
           </div>
         </div>
       </div>

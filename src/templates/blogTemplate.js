@@ -12,16 +12,13 @@ export default function Template({
   return (
     <>
       <SEO title={frontmatter.title} />
-      <div className="blog">
-        <div className="blog-post-container">
-          <div className="blog-post">
-            <div
-              className="blog-post-content"
+        <div className="blog">
+          <div className="blog-content-container">
+            <div className="blog-content" 
               dangerouslySetInnerHTML={{ __html: html }}
             />
           </div>
         </div>
-      </div>
     </>
   )
 }
