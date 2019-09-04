@@ -78,8 +78,12 @@ a {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  /* Horizontal center */
   align-items: center;
-  justify-content: center;
+  /* Vertical center */
+  // justify-content: center;
+
+  max-width: $max-body-width;
 
   /* Home */
   .mb-name {
@@ -101,6 +105,29 @@ a {
       margin: .5em 0;
       text-align: center;
     }
+  }
+
+  /* Projects layout */
+  .projects-grid {
+    list-style: none;
+    padding: 0;
+    min-width: 300px;
+    width: 100%;
+
+    .project-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-content: center;
+
+      .project-image {
+        flex: 1;
+      }
+
+      .project-summary {
+        border: solid 1px black;
+      }
+    }
+   
   }
   
   /* 404 */
