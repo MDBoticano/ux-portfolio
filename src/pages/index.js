@@ -2,14 +2,13 @@ import React from "react"
 
 import SEO from "../components/seo"
 import Info from "../components/info"
-// import Layout from "../components/layout"
 
 const IndexPage = () => {
   return (
-    <>
+    <div class="mb-main">
       <SEO title="Home" />
       <Info />
-    </>
+    </div>
   )
 }
 

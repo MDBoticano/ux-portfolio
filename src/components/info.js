@@ -45,7 +45,7 @@ const Info = () => {
   const sdImage = <Img fluid={ProjectThumbnails.SD.childImageSharp.fluid}/>
 
   return (
-    <div className="info-container">
+    <div className="mb-info-container">
     <div className="info">
       <p className="mb-name">Marlo&nbsp;Boticano</p>
       <p className="mb-title">User Researcher</p>
