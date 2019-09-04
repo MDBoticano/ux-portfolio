@@ -1,7 +1,7 @@
 import React from 'react'
-import { useStaticQuery, graphql, Link } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
-import ProjectPreview from './projectPreview'
+import Project from './project'
 
 const Info = () => {
   /* Queries: Have to be done individually until queries take variables */
@@ -44,63 +44,31 @@ const Info = () => {
       <p className="mb-name">Marlo&nbsp;Boticano</p>
       <p className="mb-title">User Researcher</p>
       <ul className="projects-grid">
-        
-        <li className="project-row">
-          <div className="project-image">
-            <Link to='/projects/feed-the-kids'>
-              <Img fluid={ProjectThumbnails.FTK.childImageSharp.fluid}/>
-            </Link>
-          </div>
 
-          <ProjectPreview 
-            title={'Feed the Kids'}
-            description={'Hungry.'}
-            link={'/projects/feed-the-kids'}
-          />
-        </li>
+        <Project title='Feed the Kids' link='/projects/feed-the-kids'
+          description='How might we help a non-profit fight food insecurity more efficiently?'
+          imgage={ProjectThumbnails.FTK.childImageSharp.fluid}
+        >
+          <Img fluid={ProjectThumbnails.FTK.childImageSharp.fluid}/>
+        </Project>
 
-        <li className="project-row">
-          <div className="project-image">
-            <Link to='/projects/matchmaker'>
-              <Img fluid={ProjectThumbnails.MM.childImageSharp.fluid}/>
-            </Link>
-          </div>
+        <Project title='Matchmaker' link='/projects/matchmaker'
+          description='How might we better bridge the gap from graduation to employment?'
+        >
+          <Img fluid={ProjectThumbnails.MM.childImageSharp.fluid}/>
+        </Project>
 
-          <ProjectPreview 
-            title={'Feed the Kids'}
-            description={'Hungry.'}
-            link={'/projects/matchmaker'}
-          />
-        </li>
+        <Project title='OilGo' link='/projects/oilgo'
+          description='How might we reduce the frustrations of car maintenance?'
+        >
+          <Img fluid={ProjectThumbnails.OG.childImageSharp.fluid}/>
+        </Project>
 
-        <li className="project-row">
-          <div className="project-image">
-            <Link to='/projects/matchmaker'>
-              <Img fluid={ProjectThumbnails.OG.childImageSharp.fluid}/>
-            </Link>
-          </div>
-
-          <ProjectPreview 
-            title={'Feed the Kids'}
-            description={'Hungry.'}
-            link={'/projects/matchmaker'}
-          />
-        </li>
-
-        <li className="project-row">
-          <div className="project-image">
-            <Link to='/projects/uc-socially-driven'>
-              <Img fluid={ProjectThumbnails.SD.childImageSharp.fluid}/>
-            </Link>
-          </div>
-
-          <ProjectPreview 
-            title={'Feed the Kids'}
-            description={'Hungry.'}
-            link={'/projects/matchmaker'}
-          />
-        </li>
-
+        <Project title='UC Socially Driven' link='/projects/uc-socially-driven'
+          description='How might we encourage social activities that foster a better sense of community?'
+        >
+          <Img fluid={ProjectThumbnails.OG.childImageSharp.fluid}/>
+        </Project>
         
       </ul>
     </div>
