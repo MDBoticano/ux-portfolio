@@ -14,7 +14,7 @@ const Info = () => {
           }
         }
       }
-      MM: file(relativePath: { eq: "matchmaker/mm_thumbnail.png" }) {
+      MM: file(relativePath: { eq: "matchmaker/mm_poster_thumbnail.png" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid_tracedSVG
