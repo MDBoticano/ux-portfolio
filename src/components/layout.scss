@@ -144,22 +144,27 @@ a {
     .blog-content {
       font-family: "Open Sans", Arial, Helvetica, sans-serif;
       font-weight: normal;
+
+      h1, h2, h3, h4, h5, h6 {
+        font-weight: 600;
+      }
+
+      h1, h2, h3, h6 {
+        text-align: center;
+      }
       
       h1 { 
-        margin: 1rem 0 0;
-        text-align: center;
+        margin: 1rem 0 0; 
       }
 
       h2 { 
         font-size: 1.25rem;
         margin: 1rem 0 0;
-        text-align: center;
       }
 
       h3 {
         font-size: 1.5rem;
         margin: 2rem 0 0;
-        text-align: center;
       }
 
       h4 {
@@ -170,11 +175,11 @@ a {
       p {
         margin: 1em 0 0;
         line-height: 1.5rem;
+        font-weight: normal;
       }
 
       h6 {
         margin: .75em auto 1em auto;
-        text-align: center;
         font-size: 0.75em;
       }
 
