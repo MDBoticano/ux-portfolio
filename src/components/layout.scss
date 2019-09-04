@@ -84,6 +84,8 @@ a {
   // justify-content: center;
 
   max-width: $max-body-width;
+  margin-left: auto;
+  margin-right: auto;
 
   /* Home */
   .mb-name {
@@ -92,7 +94,7 @@ a {
     font-weight: 600;
   }
   
-  .mb-email {
+  .mb-email, .mb-title {
     margin: .25em 0 0 0;
     font-size: 1.25rem;
     font-weight: 400;

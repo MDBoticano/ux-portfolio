@@ -28,7 +28,7 @@ const Info = () => {
           }
         }
       }
-      UCSD: file(relativePath: { eq: "uc-socially-driven/ucsd_thumbnail.png" }) {
+      SD: file(relativePath: { eq: "uc-socially-driven/ucsd_thumbnail.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid_tracedSVG
@@ -39,8 +39,10 @@ const Info = () => {
   `)
 
   return (
+    <div className="info-container">
     <div className="info">
-      <h1 className="mb-name">Marlo&nbsp;Boticano</h1>
+      <p className="mb-name">Marlo&nbsp;Boticano</p>
+      <p className="mb-title">User Researcher</p>
       <ul className="projects-grid">
         
         <li className="project-row">
@@ -88,7 +90,7 @@ const Info = () => {
         <li className="project-row">
           <div className="project-image">
             <Link to='/projects/uc-socially-driven'>
-              <Img fluid={ProjectThumbnails.UCSD.childImageSharp.fluid}/>
+              <Img fluid={ProjectThumbnails.SD.childImageSharp.fluid}/>
             </Link>
           </div>
 
@@ -101,6 +103,7 @@ const Info = () => {
 
         
       </ul>
+    </div>
     </div>
   )
 }
