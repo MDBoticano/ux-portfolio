@@ -2,11 +2,17 @@
 $main-side-padding: 4rem;
 $main-vertical-padding: 2.5rem;
 $blog-vertical-padding: 1.25rem;
-$max-body-width: 960px;
+$max-body-width: 768px;
+
+// Scrollbar shift fix (Chrome & Firefox tested)
+html {
+  margin-left: calc(100vw - 100%);
+}
 
 body {
   margin: 0;
-  background-color: #EFEDE8;
+  // background-color: #EFEDE8;
+  background-color: #ffffff;
   color: rgb(29, 29, 29);
   font-family: "Overpass Mono", monospace;
 }
