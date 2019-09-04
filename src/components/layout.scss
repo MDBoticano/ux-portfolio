@@ -4,6 +4,9 @@ $main-vertical-padding: 2.5rem;
 $blog-vertical-padding: 1.25rem;
 $max-body-width: 768px;
 
+$brand-salmon: hsl(353, 86%, 61%);
+$brand-salmon-lighter: hsl(353, 86%, 80%);
+
 // Scrollbar shift fix (Chrome & Firefox tested)
 html {
   margin-left: calc(100vw - 100%);
@@ -15,6 +18,16 @@ body {
   background-color: #ffffff;
   color: rgb(29, 29, 29);
   font-family: "Overpass Mono", monospace;
+}
+
+/* Link styling */
+a {
+  color: $brand-salmon;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 /* Layout components */
@@ -195,10 +208,6 @@ body {
       }
     }
   }
-}
-
-span {
-  display: none;
 }
 
 @media (max-width: 1079px) {
