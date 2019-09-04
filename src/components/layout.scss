@@ -70,6 +70,22 @@ a {
     padding: 0.5rem 0 0;
     font-size: 1.25em;
   }
+
+  .footer-email {
+    font-family: "Overpass Mono", monospace;
+    font-size: 1.25rem;
+  }
+
+  .footer-contacts {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+    li {
+      list-style: none;
+      margin: 0 1em;
+    }
+  }
 }
 /* END Layout components */
 
@@ -123,8 +139,7 @@ a {
       margin: 3em 0 0 0;
 
       .project-image {
-        
-        // padding-right: 2em;
+        padding: 0 1.5em 0 0;
       }
 
       .project-summary {
