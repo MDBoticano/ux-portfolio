@@ -204,15 +204,23 @@ span {
 }
 
 @media (max-width: 479px) {
-  html { font-size: 11px; }
-}
-
-@media (max-width: 359px) {
-  html { font-size: 12px }
-  $small-side-padding: 0.75rem;
-  .navigation { padding: $main-vertical-padding $small-side-padding 0; }  
+  html { font-size: 12px; }
+  $small-vertical-padding: 0.5rem;
+  $small-side-padding: 1.5rem;
+  .navigation { padding: $small-vertical-padding $small-side-padding 0; }  
   .footer { padding: 0 $small-side-padding $main-vertical-padding; }  
   .info { padding: 0 $small-side-padding; }
   .table-of-contents { padding: 0 $small-side-padding; }
   .blog { padding: 0 $small-side-padding; }
+}
+
+@media (max-width: 359px) {
+  html { font-size: 12px }
+  $extra-small-vertical-padding: 0.75rem;
+  $extra-small-side-padding: 1rem;
+  .navigation { padding: $extra-small-vertical-padding $extra-small-side-padding 0; }  
+  .footer { padding: 0 $extra-small-side-padding $main-vertical-padding; }  
+  .info { padding: 0 $extra-small-side-padding; }
+  .table-of-contents { padding: 0 $extra-small-side-padding; }
+  .blog { padding: 0 $extra-small-side-padding; }
 }
