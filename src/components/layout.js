@@ -6,7 +6,7 @@ import "./layout.scss"
 
 const Layout = ({ children }) => {
   return (
-    <div id="main">
+    <div id="main" className="layout">
       <Navigation />
       {children}
       <Footer />

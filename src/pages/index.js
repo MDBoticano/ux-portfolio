@@ -5,7 +5,7 @@ import Info from "../components/info"
 
 const IndexPage = () => {
   return (
-    <div class="mb-main">
+    <div className="mb-main">
       <SEO title="Home" />
       <Info />
     </div>
