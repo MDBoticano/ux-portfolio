@@ -59,6 +59,12 @@ module.exports = {
         start_url: `/`,
         icon: `src/images/shoe-icon.png`, 
       },
-    }
+    },
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`./src/components/layout`)
+      },
+    },
   ],
 }
