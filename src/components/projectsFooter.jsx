@@ -50,18 +50,11 @@ const ProjectsFooter = ({ active }) => {
     return projectLinks
   }
 
-  const footerStyle = {
-    marginTop: 0,
-    marginBottom: '0.125rem',
-    fontWeight: 'bold',
-  }
-
-
   return (
     <div className="projects-footer">
-      <p className="projects-footer-description" style={footerStyle}>
+      {/* <p className="projects-footer-description">
         Projects
-      </p>
+      </p> */}
       <div className="projects-list-links">
         {listProjects(projectsList)}
       </div>
