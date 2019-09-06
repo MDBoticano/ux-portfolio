@@ -167,6 +167,8 @@ a {
   flex-direction: column;
   flex-grow: 1;
 
+  // align-items: center;
+
   .page-not-found {
     padding: 0 $main-side-padding;
     display: flex;
@@ -189,7 +191,8 @@ a {
     }
   
     #description-404 {
-      margin: 0 2em 1em 2em;
+      // margin: 0 2em 1em 2em;
+      margin: 0 auto 1em auto;
       font-size: 1.5rem;
       text-align: center;
     }
@@ -306,20 +309,52 @@ a {
   html { font-size: 12px; }
   $small-vertical-padding: 0.5rem;
   $small-side-padding: 1.5rem;
-  .navigation { padding: $small-vertical-padding $small-side-padding 0; }  
-  .footer { padding: 0 $small-side-padding $main-vertical-padding; }  
-  .info { padding: 0 $small-side-padding; }
-  .table-of-contents { padding: 0 $small-side-padding; }
-  .blog { padding: 0 $small-side-padding; }
+  
+  .navigation { 
+    padding: $small-vertical-padding $small-side-padding 0; 
+  }  
+  .footer { 
+    padding: 0 $small-side-padding $main-vertical-padding; 
+  }  
+  .info { 
+    padding: 0 $small-side-padding; 
+  }
+  .mb-content-404 { 
+    padding: 0 $small-side-padding; 
+  }
+  .table-of-contents { 
+    padding: 0 $small-side-padding; 
+  }
+  .blog { 
+    padding: 0 $small-side-padding; 
+  }
 }
 
 @media (max-width: 359px) {
   html { font-size: 12px }
   $extra-small-vertical-padding: 0.75rem;
   $extra-small-side-padding: 1rem;
-  .navigation { padding: $extra-small-vertical-padding $extra-small-side-padding 0; }  
-  .footer { padding: 0 $extra-small-side-padding $main-vertical-padding; }  
-  .info { padding: 0 $extra-small-side-padding; }
-  .table-of-contents { padding: 0 $extra-small-side-padding; }
-  .blog { padding: 0 $extra-small-side-padding; }
+
+  .navigation { 
+    padding: $extra-small-vertical-padding $extra-small-side-padding 0; 
+  }  
+  .footer { 
+    padding: 0 $extra-small-side-padding $main-vertical-padding; 
+  }  
+  .info { 
+    padding: 0 $extra-small-side-padding; 
+  }
+  .mb-content-404 { 
+    padding: 0 $extra-small-side-padding; 
+    
+    .page-not-found { 
+      padding: 0; 
+    }
+  }
+  .table-of-contents { 
+    padding: 0 $extra-small-side-padding; 
+  }
+  .blog { 
+    padding: 0 $extra-small-side-padding; 
+  }
 }
