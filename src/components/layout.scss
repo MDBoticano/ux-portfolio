@@ -84,8 +84,9 @@ a {
       list-style: none;
       margin: 0 1em;
     }
-  }
+  }  
 }
+
 /* END Layout components */
 
 .info {
@@ -216,7 +217,8 @@ a {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  padding: $blog-vertical-padding $main-side-padding;
+  padding: 0 $main-side-padding;
+  margin: $blog-vertical-padding 0;
 
   .blog-content-container {
     margin: 0 auto;
@@ -294,6 +296,44 @@ a {
         margin: .25rem 0 0 0;
       }
     }
+  }
+
+  /* Not in Layout, but borrows layout styling */
+  .projects-footer {
+    margin: 2rem auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+
+    .projects-footer-description {
+      font-size: 1.5rem;
+      /* not working without !important, fixed by inline styling */
+      margin-top: 0; 
+      padding: .5rem 0;
+    }
+
+    .projects-list-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-size: 1.25rem;
+      
+      .footer-link {
+        color: gray;
+        margin: 0 .75rem;
+        &:hover {
+          color: black;
+        }
+      }
+    
+      .active-project-link {
+        color: $brand-salmon;
+        &:hover {
+          color:$brand-salmon;
+        }
+      }
+    } 
   }
 }
 
