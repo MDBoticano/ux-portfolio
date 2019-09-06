@@ -4,12 +4,27 @@ import Footer from './footer'
 
 import "./layout.scss"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, location }) => {
+  const pagesWithFooter = [
+    '/',
+    '/about',
+  ]
+
+  const shouldHaveFooter = (path) => {
+    return (pagesWithFooter.includes(path))
+  }
+
+  const renderFooter = (loc) => {
+    if (shouldHaveFooter(loc.pathname) ) {
+      return <Footer />
+    }
+  }
+
   return (
     <div id="main" className="layout">
       <Navigation />
       {children}
-      <Footer />
+      {renderFooter(location)}
     </div>
   )
 }
