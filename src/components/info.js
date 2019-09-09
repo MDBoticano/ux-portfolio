@@ -39,10 +39,14 @@ const Info = () => {
   `)
   
   /* Turn query results into Gatsby Image, then pass as prop */
-  const ftkImage = <Img fluid={ProjectThumbnails.FTK.childImageSharp.fluid}/>
-  const mmImage = <Img fluid={ProjectThumbnails.MM.childImageSharp.fluid}/>
-  const ogImage = <Img fluid={ProjectThumbnails.OG.childImageSharp.fluid}/>
-  const sdImage = <Img fluid={ProjectThumbnails.SD.childImageSharp.fluid}/>
+  const ftkImage = <Img fluid={ProjectThumbnails.FTK.childImageSharp.fluid} 
+    alt='Feed the Kids registration form' />
+  const mmImage = <Img fluid={ProjectThumbnails.MM.childImageSharp.fluid} 
+    alt='Matchmaker poster' />
+  const ogImage = <Img fluid={ProjectThumbnails.OG.childImageSharp.fluid} 
+    alt='OilGo app screen' />
+  const sdImage = <Img fluid={ProjectThumbnails.SD.childImageSharp.fluid} 
+    alt='UC Socially Driven app screen' />
 
   return (
     <div className="mb-content-info">
@@ -54,6 +58,7 @@ const Info = () => {
       <Project 
         title='Feed the Kids'
         link='/projects/feed-the-kids'
+        ariaLabelText='View Feed the Kids project details'
         description='How might we help a non-profit fight food insecurity more efficiently?'
         image={ftkImage}
       />
@@ -61,6 +66,7 @@ const Info = () => {
       <Project 
         title='Matchmaker' 
         link='/projects/matchmaker'
+        ariaLabelText='View Matchmaker project details'
         description='How might we better bridge the gap from graduation to employment?'
         image={mmImage}
       />
@@ -68,6 +74,7 @@ const Info = () => {
       <Project
         title='OilGo'
         link='/projects/oilgo'
+        ariaLabelText='View OilGo project details'
         description='How might we reduce the frustrations of car maintenance?'
         image={ogImage}
       />
@@ -75,6 +82,7 @@ const Info = () => {
       <Project
         title='UC Socially Driven'
         link='/projects/uc-socially-driven'
+        ariaLabelText='View UC Socially Driven project details'
         description='How might we encourage social activities that foster a better sense of community?'
         image={sdImage}
       />
