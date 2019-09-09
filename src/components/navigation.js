@@ -7,7 +7,7 @@ const LinkToResume = "https://drive.google.com/file/d/1zILQT_FgdzYh6saWl1oBFD9sK
 const Navigation = () => {
   return (
     <div className="nav-container">
-    <nav className="navigation" aria-label="navigation">
+    <div className="navigation">
       <LogoImage />
       <div className="links">
         <Link to="/">Work</Link>
@@ -16,7 +16,7 @@ const Navigation = () => {
           Resume
         </a>
       </div>
-    </nav>
+    </div>
     </div>
   )
 }

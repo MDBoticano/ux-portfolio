@@ -15,16 +15,22 @@ const Layout = ({ children, location }) => {
   }
 
   const renderFooter = (loc) => {
-    if (shouldHaveFooter(loc.pathname) ) {
+    if (shouldHaveFooter(loc.pathname)) {
       return <Footer />
     }
   }
 
   return (
-    <div id="main" className="layout">
-      <Navigation />
-      {children}
-      {renderFooter(location)}
+    <div className="root">
+      <nav>
+        <Navigation />
+      </nav>
+      <main>
+        {children}
+      </main>
+      <footer>
+        {renderFooter(location)}
+      </footer>
     </div>
   )
 }
