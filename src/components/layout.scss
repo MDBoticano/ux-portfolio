@@ -4,7 +4,9 @@ $main-vertical-padding: 2.5rem;
 $blog-vertical-padding: .75rem;
 $max-body-width: 768px;
 
-$brand-salmon: hsl(353, 86%, 61%);
+// $brand-salmon: hsl(353, 86%, 61%); // resume color, fails contrast check
+$brand-salmon: hsl(353, 86%, 49%); // AA for small text on white background
+// $brand-salmon: hsl(355, 80%, 41%); // AAA for small text on white background
 $brand-salmon-lighter: hsl(353, 86%, 80%);
 
 // Scrollbar shift fix (Chrome, Firefox, and Safari tested)
@@ -37,8 +39,21 @@ a {
   flex-direction: column;
 }
 
+main {
+  // padding: 0 $main-side-padding;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.mb-main {
+  padding: 0.75em 0;
+}
+
 .navigation {
-  padding: $main-vertical-padding $main-side-padding 0;
+  // padding: $main-vertical-padding $main-side-padding 0;
+  padding: $main-vertical-padding $main-side-padding;
+
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -55,6 +70,7 @@ a {
   .links {
     a {
       margin: 0 0 0 1.5rem;
+      font-size: 1.125rem;
     }
   }
 }
@@ -83,6 +99,10 @@ a {
     li {
       list-style: none;
       margin: 0 1em;
+
+      a {
+        font-size: 1.125rem;
+      }
     }
   }  
 }
@@ -152,62 +172,59 @@ a {
 
         .project-title {
           margin: 0;
+          font-size: 1.125rem;
         }
 
         .project-description {
           margin: 1em 0 0 0;
+          font-size: 1rem;
         }
       }
     }
   }  
 }
 
-.mb-main {
-  margin: 0.75em 0;
+.mb-content-404 {
+  padding: 0 $main-side-padding;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 
-  .mb-content-404 {
+  // align-items: center;
+
+  .page-not-found {
     padding: 0 $main-side-padding;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    /* Horizontal center */
+    align-items: center;
+    /* Vertical center */
+    justify-content: center;
   
-    // align-items: center;
+    max-width: $max-body-width;
+    margin-left: auto;
+    margin-right: auto;
   
-    .page-not-found {
-      padding: 0 $main-side-padding;
-      display: flex;
-      flex-direction: column;
-      flex-grow: 1;
-      /* Horizontal center */
-      align-items: center;
-      /* Vertical center */
-      justify-content: center;
-    
-      max-width: $max-body-width;
-      margin-left: auto;
-      margin-right: auto;
-    
-      /* 404 */
-      #big-404 {
-        font-size: 10rem;
-        margin: 0;
-        padding: 0;
-      }
-    
-      #description-404 {
-        // margin: 0 2em 1em 2em;
-        margin: 0 auto 1em auto;
-        font-size: 1.5rem;
-        text-align: center;
-      }
-    
-      #go-home {
-        font-size: 1.25rem;
-      }
+    /* 404 */
+    #big-404 {
+      font-size: 10rem;
+      margin: 0;
+      padding: 0;
+    }
+  
+    #description-404 {
+      // margin: 0 2em 1em 2em;
+      margin: 0 auto 1em auto;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  
+    #go-home {
+      font-size: 1.25rem;
     }
   }
 }
-
 
 .table-of-contents {
   display: flex;
@@ -360,7 +377,8 @@ a {
   $small-side-padding: 1.5rem;
   
   .navigation { 
-    padding: $small-vertical-padding $small-side-padding 0; 
+    // padding: $small-vertical-padding $small-side-padding 0; 
+    padding: $small-vertical-padding $small-side-padding;
   }  
   .footer { 
     padding: 0 $small-side-padding $main-vertical-padding; 
@@ -385,7 +403,8 @@ a {
   $extra-small-side-padding: 1rem;
 
   .navigation { 
-    padding: $extra-small-vertical-padding $extra-small-side-padding 0; 
+    // padding: $extra-small-vertical-padding $extra-small-side-padding 0; 
+    padding: $extra-small-vertical-padding $extra-small-side-padding; 
   }  
   .footer { 
     padding: 0 $extra-small-side-padding $main-vertical-padding; 
