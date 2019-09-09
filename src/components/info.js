@@ -10,28 +10,28 @@ const Info = () => {
       FTK: file(relativePath: { eq: "feed-the-kids/ftk_thumbnail.png" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid_tracedSVG
+            ...GatsbyImageSharpFluid_noBase64
           }
         }
       }
       MM: file(relativePath: { eq: "matchmaker/mm_poster_thumbnail.png" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid_tracedSVG
+            ...GatsbyImageSharpFluid_noBase64
           }
         }
       }
       OG: file(relativePath: { eq: "oilgo/og_thumbnail.png" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid_tracedSVG
+            ...GatsbyImageSharpFluid_noBase64
           }
         }
       }
       SD: file(relativePath: { eq: "uc-socially-driven/sd_thumbnail.png" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid_tracedSVG
+            ...GatsbyImageSharpFluid_noBase64
           }
         }
       }
