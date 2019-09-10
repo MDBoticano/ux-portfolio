@@ -312,9 +312,14 @@ main {
         font-weight: normal;
       }
 
+      // Image styling attempt
+      .gatsby-resp-image-wrapper {
+        margin: 2rem 0;
+      }
+
       // Image captions
       h6 {
-        margin: .75em auto 1em auto;
+        margin: .75em auto 2em auto;
         font-family: $body-font;
         font-weight: normal;
         // font-size: 1rem;
