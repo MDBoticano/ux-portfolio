@@ -51,8 +51,10 @@ const Info = () => {
   return (
     <div className="mb-content-info">
     <div className="info">
-      <p className="mb-name">Marlo&nbsp;Boticano</p>
-      <p className="mb-title">User Researcher</p>
+      <div className="mb-summary">
+        <p className="mb-name">Marlo&nbsp;Boticano</p>
+        <p className="mb-title">User Researcher</p>
+      </div>
       
       <ul className="projects-grid">
       <Project 

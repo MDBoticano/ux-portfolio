@@ -127,33 +127,35 @@ main {
   margin-right: auto;
 
   /* Home */
-  .mb-name {
-    margin: 0;
-    font-family: $header-font;
-    font-size: 2rem;
-    font-weight: 600;
-  }
-  
-  .mb-email, .mb-title {
-    margin: .25em 0 0 0;
-    font-family: $header-font;
-    font-size: 1.25rem;
-    font-weight: 400;
-  }
-  
-  .sorry-for-the-mess {
-    margin: 2em 0;
-  
-    p {
-      margin: .5em 0;
-      text-align: center;
+  .mb-summary {
+    display: flex;
+    flex-direction: column;
+    /* Horizontal center */
+    align-items: center;
+    justify-content: center;
+
+    padding-bottom: $main-vertical-padding;
+    
+    .mb-name {
+      margin: 0;
+      font-family: $header-font;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    
+    .mb-title {
+      margin: .25em 0 0 0;
+      font-family: $header-font;
+      font-size: 1.25rem;
+      font-weight: 400;
     }
   }
-
+  
   /* Projects layout */
   .projects-grid {
     list-style: none;
     padding: 0;
+    margin: 0;
     min-width: 300px;
     width: 100%;
 
@@ -187,9 +189,13 @@ main {
         }
       }
     }
+    
+    /* Sets the top margin of the first project row */
+    .project-row:nth-child(1) {
+      margin-top: 0;
+    }
   }  
 }
-
 
 .mb-main {
   padding: 0.75em 0;
