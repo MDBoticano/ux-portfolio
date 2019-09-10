@@ -12,13 +12,13 @@ import Img from "gatsby-image"
  * - `gatsby-image`: https://gatsby.dev/gatsby-image
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
-const logoContainerMaxWidth = '3.5em'
+// Inline styling for logo: moved to layout.scss, but if issues arise, revert
+// const logoContainerMaxWidth = '3.5em'
+// const logoContainerStyle = {
+//   maxWidth: logoContainerMaxWidth
+// }
 const altText = 'shoe logo'
-const ariaLabelText = 'return to homepage'
-
-const logoContainerStyle = {
-  maxWidth: logoContainerMaxWidth
-}
+const ariaLabel = 'return to homepage'
 
 const LogoImage = () => {
   const data = useStaticQuery(graphql`
@@ -34,9 +34,7 @@ const LogoImage = () => {
   `)
 
   return (
-    <Link to="/" className="logo-container" style={logoContainerStyle} 
-      role="img" aria-label={ariaLabelText}
-    >
+    <Link to="/" className="logo-container" role="img" aria-label={ariaLabel} >
       <Img fluid={data.placeholderImage.childImageSharp.fluid} alt={altText} />
     </Link>
   )

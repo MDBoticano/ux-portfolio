@@ -6,7 +6,6 @@ import { Link } from "gatsby"
 import SEO from "../components/seo"
 
 const PageNotFound = () => (
-  // <div className="mb-main">
   <div className="mb-content-404">
     <SEO title="404: Not Found" />
     <div className="page-not-found">
@@ -15,7 +14,6 @@ const PageNotFound = () => (
       <Link to="/" id="go-home">Return to Homepage</Link>
     </div>
   </div>
-  // </div>
 )
 
 export default PageNotFound

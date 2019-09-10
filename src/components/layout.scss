@@ -3,6 +3,7 @@ $main-side-padding: 4rem;
 $main-vertical-padding: 2.5rem;
 $blog-vertical-padding: .75rem;
 $max-body-width: 768px;
+$logo-max-width: 3.5em;
 
 // $brand-salmon: hsl(353, 86%, 61%); // resume color, fails contrast check
 $brand-salmon: hsl(353, 86%, 49%); // AA for small text on white background
@@ -46,10 +47,6 @@ main {
   flex-grow: 1;
 }
 
-.mb-main {
-  padding: 0.75em 0;
-}
-
 .navigation {
   // padding: $main-vertical-padding $main-side-padding 0;
   padding: $main-vertical-padding $main-side-padding;
@@ -66,6 +63,7 @@ main {
   
   .logo-container {
     flex: 1;
+    max-width: $logo-max-width;
   }
   .links {
     a {
@@ -106,7 +104,6 @@ main {
     }
   }  
 }
-
 /* END Layout components */
 
 .info {
@@ -184,6 +181,11 @@ main {
   }  
 }
 
+
+.mb-main {
+  padding: 0.75em 0;
+}
+
 .mb-content-404 {
   padding: 0 $main-side-padding;
   display: flex;
@@ -193,7 +195,6 @@ main {
   // align-items: center;
 
   .page-not-found {
-    padding: 0 $main-side-padding;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -205,6 +206,9 @@ main {
     max-width: $max-body-width;
     margin-left: auto;
     margin-right: auto;
+
+    padding: 0 $main-side-padding;
+    padding-bottom: calc(2 * #{$main-vertical-padding} + #{$logo-max-width} );
   
     /* 404 */
     #big-404 {
@@ -388,6 +392,9 @@ main {
   }
   .mb-content-404 { 
     padding: 0 $small-side-padding; 
+    .page-not-found {
+      padding-bottom: calc(2 * #{$small-vertical-padding} + #{$logo-max-width} );
+    }
   }
   .table-of-contents { 
     padding: 0 $small-side-padding; 
@@ -399,30 +406,31 @@ main {
 
 @media (max-width: 359px) {
   html { font-size: 12px }
-  $extra-small-vertical-padding: 0.75rem;
-  $extra-small-side-padding: 1rem;
+  $xs-vertical-padding: 0.75rem;
+  $xs-side-padding: 1rem;
 
   .navigation { 
-    // padding: $extra-small-vertical-padding $extra-small-side-padding 0; 
-    padding: $extra-small-vertical-padding $extra-small-side-padding; 
+    // padding: $xs-vertical-padding $xs-side-padding 0; 
+    padding: $xs-vertical-padding $xs-side-padding; 
   }  
   .footer { 
-    padding: 0 $extra-small-side-padding $main-vertical-padding; 
+    padding: 0 $xs-side-padding $main-vertical-padding; 
   }  
   .info { 
-    padding: 0 $extra-small-side-padding; 
+    padding: 0 $xs-side-padding; 
   }
   .mb-content-404 { 
-    padding: 0 $extra-small-side-padding; 
+    padding: 0 $xs-side-padding; 
     
     .page-not-found { 
-      padding: 0; 
+      padding: 0;
+      padding-bottom: calc(2*#{$xs-vertical-padding} + #{$logo-max-width});
     }
   }
   .table-of-contents { 
-    padding: 0 $extra-small-side-padding; 
+    padding: 0 $xs-side-padding; 
   }
   .blog { 
-    padding: 0 $extra-small-side-padding; 
+    padding: 0 $xs-side-padding; 
   }
 }
