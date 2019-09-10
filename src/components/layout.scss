@@ -165,17 +165,17 @@ main {
       align-content: center;
       margin: 3em 0 0 0;
 
-      $middle-padding: 1.5em;
+      $project_gap-padding: 1.5em;
 
       .project-image {
-        padding: 0 $middle-padding 0 0;
+        padding-right: $project_gap-padding;
       }
 
       .project-summary {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 0 0 0 $middle-padding;
+        padding-left: $project_gap-padding;
 
         .project-title {
           margin: 0;
@@ -421,7 +421,6 @@ main {
   $small-side-padding: 1.5rem;
   
   .navigation { 
-    // padding: $small-vertical-padding $small-side-padding 0; 
     padding: $small-vertical-padding $small-side-padding;
   }  
   .footer { 
@@ -429,11 +428,20 @@ main {
   }  
   .info { 
     padding: 0 $small-side-padding; 
+    .projects-grid .project-row {
+      $small-project_gap-padding: 1rem;
+      .project-image {
+        padding-right: $small-project_gap-padding;
+      }
+      .project-summary {
+        padding-left: $small-project_gap-padding;
+      }
+    }
   }
   .mb-content-404 { 
     padding: 0 $small-side-padding; 
     .page-not-found {
-      padding-bottom: calc(2 * #{$small-vertical-padding} + #{$logo-max-width} );
+      padding-bottom: calc(2*#{$small-vertical-padding} + #{$logo-max-width});
     }
   }
   .table-of-contents { 
@@ -450,7 +458,6 @@ main {
   $xs-side-padding: 1rem;
 
   .navigation { 
-    // padding: $xs-vertical-padding $xs-side-padding 0; 
     padding: $xs-vertical-padding $xs-side-padding; 
   }  
   .footer { 
@@ -458,6 +465,16 @@ main {
   }  
   .info { 
     padding: 0 $xs-side-padding; 
+
+    .projects-grid .project-row {
+      $xs-project_gap-padding: 0.5rem;
+      .project-image {
+        padding-right: $xs-project_gap-padding;
+      }
+      .project-summary {
+        padding-left: $xs-project_gap-padding;
+      }
+    }
   }
   .mb-content-404 { 
     padding: 0 $xs-side-padding; 
