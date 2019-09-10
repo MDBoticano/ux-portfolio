@@ -6,6 +6,7 @@ $max-body-width: 768px;
 $logo-max-width: 3.5em;
 // $header-font: "Overpass Mono", monospace;
 $header-font: "Overpass", Arial, Helvetica, sans-serif;
+$monospace-font: "Overpass Mono", monospace;
 $body-font: "Open Sans", Arial, Helvetica, sans-serif;
 
 // $brand-salmon: hsl(353, 86%, 61%); // resume color, fails contrast check
@@ -220,6 +221,7 @@ main {
   
     /* 404 */
     #big-404 {
+      font-family: $monospace-font;
       font-size: 10rem;
       margin: 0;
       padding: 0;
@@ -228,11 +230,13 @@ main {
     #description-404 {
       // margin: 0 2em 1em 2em;
       margin: 0 auto 1em auto;
+      font-family: $monospace-font;
       font-size: 1.5rem;
       text-align: center;
     }
   
     #go-home {
+      font-family: $monospace-font;
       font-size: 1.25rem;
     }
   }
