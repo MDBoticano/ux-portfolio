@@ -4,6 +4,9 @@ $main-vertical-padding: 2.5rem;
 $blog-vertical-padding: .75rem;
 $max-body-width: 768px;
 $logo-max-width: 3.5em;
+// $header-font: "Overpass Mono", monospace;
+$header-font: "Overpass", Arial, Helvetica, sans-serif;
+$body-font: "Open Sans", Arial, Helvetica, sans-serif;
 
 // $brand-salmon: hsl(353, 86%, 61%); // resume color, fails contrast check
 $brand-salmon: hsl(353, 86%, 49%); // AA for small text on white background
@@ -19,7 +22,7 @@ body {
   margin: 0;
   background-color: #ffffff;
   color: rgb(29, 29, 29);
-  font-family: "Overpass Mono", monospace;
+  font-family: $body-font;
 }
 
 /* Link styling */
@@ -68,6 +71,7 @@ main {
   .links {
     a {
       margin: 0 0 0 1.5rem;
+      font-family: $header-font;
       font-size: 1.125rem;
     }
   }
@@ -85,7 +89,7 @@ main {
   }
 
   .footer-email {
-    font-family: "Overpass Mono", monospace;
+    font-family: $header-font;
     font-size: 1.25rem;
   }
 
@@ -99,6 +103,7 @@ main {
       margin: 0 1em;
 
       a {
+        font-family: $header-font;
         font-size: 1.125rem;
       }
     }
@@ -123,12 +128,14 @@ main {
   /* Home */
   .mb-name {
     margin: 0;
+    font-family: $header-font;
     font-size: 2rem;
     font-weight: 600;
   }
   
   .mb-email, .mb-title {
     margin: .25em 0 0 0;
+    font-family: $header-font;
     font-size: 1.25rem;
     font-weight: 400;
   }
@@ -169,6 +176,7 @@ main {
 
         .project-title {
           margin: 0;
+          font-family: $header-font;
           font-size: 1.125rem;
         }
 
@@ -244,7 +252,7 @@ main {
   flex-direction: column;
   flex-grow: 1;
   padding: 0 $main-side-padding;
-  margin: $blog-vertical-padding 0;
+  // margin:  0;
 
   .blog-content-container {
     margin: 0 auto;
@@ -252,11 +260,12 @@ main {
     max-width: $max-body-width;
 
     .blog-content {
-      font-family: "Open Sans", Arial, Helvetica, sans-serif;
+      font-family: $body-font;
       font-weight: normal;
 
       h1, h2, h3, h4, h5, h6 {
         font-weight: 600;
+        font-family: $header-font;
       }
 
       h1, h2, h3, h6 {
@@ -282,14 +291,21 @@ main {
         margin: 1.5rem 0 0;
       }
 
+      h5 {
+        font-size: 1rem;
+        margin-bottom: 0;
+      }
+
       p {
         margin: 1em 0 0;
         line-height: 1.5rem;
         font-weight: normal;
       }
 
+      // Image captions
       h6 {
         margin: .75em auto 1em auto;
+        font-family: $body-font;
         font-size: 0.75em;
       }
 
@@ -321,6 +337,10 @@ main {
       h4 + p {
         margin: .25rem 0 0 0;
       }
+
+      h5 + ul {
+        margin-top: 0.33rem;
+      }
     }
 
       /* Not in Layout, but borrows layout styling */
@@ -346,6 +366,8 @@ main {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        font-family: $header-font;
+        font-weight: 600;
         font-size: 1.25rem;
         
         .footer-link {
@@ -367,7 +389,7 @@ main {
   } 
 }
 
-@media (max-width: 1079px) {
+@media (max-width: 1023px) {
   html { font-size: 16px; }
 }
 

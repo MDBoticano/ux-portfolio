@@ -4,6 +4,34 @@
 }
 
 @font-face {
+  font-family: "Overpass";
+  src: url("../../static/fonts/overpass/overpass-v4-latin-regular.woff2"),
+       url("../../static/fonts/overpass/overpass-v4-latin-regular.woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Overpass";
+  src: url("../../static/fonts/overpass/overpass-v4-latin-100.woff2"),
+       url("../../static/fonts/overpass/overpass-v4-latin-100.woff");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Overpass";
+  src: url("../../static/fonts/overpass/overpass-v4-latin-600.woff2"),
+       url("../../static/fonts/overpass/overpass-v4-latin-600.woff");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Overpass";
+  src: url("../../static/fonts/overpass/overpass-v4-latin-900.woff2"),
+       url("../../static/fonts/overpass/overpass-v4-latin-900.woff");
+  font-weight: 900;
+}
+
+@font-face {
   font-family: "Open Sans";
   src: url("../../static/fonts/open_sans/open-sans-v17-latin-regular.woff2"),
        url("../../static/fonts/open_sans/open-sans-v17-latin-regular.woff");
