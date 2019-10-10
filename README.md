@@ -1,3 +1,9 @@
+# My UX Portfolio
+
+This is my UX Researcher portfolio made using Gatsby.js. The content and layout is the mostly the same as my old Jekyll portfolio. However, advantages with Gatsby include pages loading quicker and images are lazy-loaded. 
+
+----
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
